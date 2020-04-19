@@ -95,8 +95,8 @@ with open('label.json','w') as lf:
 n_classes = len(label_dict["id2genre"])
 savelocation = "../movie-genre-from-its-poster/MoviePosters/"
 
-#---------------un-comment this to download movie posters and then remove it.------------------------------------------
-#download_posters(savelocation)  
+#---------------comment below statement once you downloaded the movie posters ------------------------------------------
+download_posters(savelocation)  
 #----------------------------------------------------------------------------------------------------------------------
 
 image_glob = glob.glob(savelocation+"*.jpg")
